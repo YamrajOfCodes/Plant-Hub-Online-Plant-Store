@@ -1,16 +1,36 @@
-# React + Vite
+# Plant Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plant Hub is a lightweight frontend project I put together to show off clean UI work and component architecture. It's not meant to be a real store — there's no backend, user accounts, or payment system. Just a simple interface for browsing plants.
 
-Currently, two official plugins are available:
+## What's Inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fully responsive design with Tailwind
+- Product grid and individual detail pages
+- Loading states handled through React Suspense and lazy-loaded components
+- Modular, reusable components (loaders, cards, navigation)
+- Routing via React Router
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- Tailwind CSS
+- Code-splitting with React.lazy and Suspense
+- Vite as the build tool
 
-## Expanding the ESLint configuration
+## Why This Exists
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I wanted a focused way to demonstrate frontend fundamentals: layout composition, styling decisions, routing structure, and how I organize a React codebase. Everything here is intentionally stripped down to highlight those skills without getting lost in backend logic or complex features.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Then open your browser and check it out.
+
+## What's Missing (By Design)
+
+This isn't a production app. There's no API integration, no cart persistence, no search filters none of that. It's a UI sandbox. If I decide to expand it later with filtering, search, or actual data management, this setup gives me a solid foundation to build on.
