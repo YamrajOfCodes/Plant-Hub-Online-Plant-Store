@@ -1,0 +1,105 @@
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url("./assets/fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter_18pt-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  font-family: Inter;
+}
+
+
+ul{
+   font-family: "Indie Flower";
+}
+
+ul li{
+  cursor: pointer;
+}
+
+.cta-links:hover{
+  color: green;
+}
+
+
+.main {
+    background-image: url("./assets/Images/brand-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.menu-icon .data {
+  width: 18px;
+  height: 2px;
+  background: white;
+  border-radius: 8px;
+}
+
+.menu-icon .data1 {
+  width: 12px;
+  height: 2px;
+  background: white;
+  border-radius: 10px;
+}
+
+.card {
+      position: relative;
+      border-radius: 40px;
+      /* padding: 50px 20px 25px; */
+      color: white;
+      border-color: #1A2217;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -36px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 18rem;
+      height: 50px;
+      /* background-color: #1A2217; */
+      outline: none;
+      border-radius: 0 0 50% 50%;
+    }
+
+    button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    }
+
+    @media (min-width: 600px) {
+  .card::before {
+    background: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .card::before {
+      background-color: #1A2217;
+    
+  }
+}
+
+
+
+
