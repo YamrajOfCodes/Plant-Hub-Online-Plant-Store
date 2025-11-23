@@ -18,7 +18,7 @@ const Header = () => {
        <nav className='w-full h-18 flex items-start  px-4  justify-between'>
         
         <Link to='/' className="w-auto cursor-pointer">
-            <img src={Logo} alt="brand's logo" className='w-[45%] md:w-[35%] lg:w-[40%] flex items-center' srcset="" />
+            <img src={Logo} alt="brand's logo" className='w-[45%] md:w-[35%] lg:w-[40%] flex items-center py-2 md:py-0 ' srcset="" />
         </Link>
         
         <div className="middle hidden lg:block">

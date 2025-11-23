@@ -4,8 +4,8 @@ const Loader = () => {
   const loaderStyle = {
     width: "48px",
     height: "48px",
-    border: "5px solid black",
-    borderBottomColor: "white",
+    border: "5px solid white",
+    borderBottomColor: "green",
     borderRadius: "50%",
     display: "inline-block",
     boxSizing: "border-box",
