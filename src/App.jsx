@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from "react-router-dom";
+import Loader from './Components/Loader/Loader';
 
 //  I Implemented Lazy imports here I used these approach in every big projects
 
@@ -8,8 +9,8 @@ const Product = lazy(() => import('./Pages/Product/Product'));
 
 const App = () => {
   return (
-    // we can add the component here insted of loading like spinner or other
-    <Suspense fallback={<div>Loading...</div>}> 
+    // I add the component here insted of loading 
+    <Suspense fallback={<div className='w-full h-screen flex justify-center items-center bg-black'><Loader/></div>}> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
