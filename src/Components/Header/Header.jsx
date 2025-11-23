@@ -42,7 +42,7 @@ const Header = () => {
      {
       showNav &&  <div className="box px-4 py-2  lg:hidden  transition ease-in ">
         <ul className='flex flex-col gap-4 text-sm  transition ease-in '>
-            <li className='hover:bg-green-900 p-2 cursor-pointer rounded-xl '></li>
+            <li className='hover:bg-green-900 p-2 cursor-pointer rounded-xl'>Home</li>
             <li className='hover:bg-green-900 p-2 cursor-pointer rounded-xl'>Plant Type</li>
             <li className='hover:bg-green-900 p-2 cursor-pointer rounded-xl'>More</li>
             <li className='hover:bg-green-900 p-2 cursor-pointer rounded-xl'>Contact</li>

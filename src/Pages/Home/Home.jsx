@@ -74,17 +74,19 @@ const Home = () => {
 
      <section className='space-y-8 my-10 py-2'>
        <SectionTitle>Customer Review</SectionTitle>
-       <div className='flex w-full flex-wrap h-full justify-center gap-10 md:px-4'>
+       <div className='flex w-full flex-wrap h-full justify-center  gap-10 md:px-4 '>
      {
        reviews.map((user,index)=>{
          return(
-            <div key={index}>
+            <>
             <Reviews
+            key={index}
             userName={user.userName}
             userImg={user.userImg}
             userDesc={user.userReview}
             />
-            </div>
+            </>
+
         )
       })
      }

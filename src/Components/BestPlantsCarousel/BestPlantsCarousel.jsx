@@ -36,7 +36,7 @@ const BestPlantsCarousel = () => {
 
   return (
     <div className="relative w-full max-w-3xl xl:max-w-5xl mx-auto rounded-4xl backdrop-blur-md  bg-white/5  border-white/20">
-      <div className="relative h-[26rem] w-full">
+      <div className="relative h-[34rem] md:h-[26rem] w-full">
         {slides.map((slide, idx) => (
           <div
             key={idx}
