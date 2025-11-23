@@ -10,7 +10,7 @@ const Product = lazy(() => import('./Pages/Product/Product'));
 const App = () => {
   return (
     // I add the component here insted of loading 
-    <Suspense fallback={<div className='w-full h-screen flex justify-center items-center bg-green'><Loader/></div>}> 
+    <Suspense fallback={<div className='w-full h-screen flex justify-center items-center bg-green-700'><Loader/></div>}> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
