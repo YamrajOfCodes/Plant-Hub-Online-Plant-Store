@@ -8,7 +8,8 @@ const Product = lazy(() => import('./Pages/Product/Product'));
 
 const App = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    // we can add the component here insted of loading like spinner or other
+    <Suspense fallback={<div>Loading...</div>}> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />

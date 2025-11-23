@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 
 import { trendyPlants } from '../../Data/Trendyplants';
 import { products } from '../../Data/Products';
-import { reviews } from '../../Data/Reviews';
 
 
 // Following are Components imports
